@@ -1,0 +1,22 @@
+$font: "Work Sans", sans-serif;
+
+@mixin font {
+  font-family: $font;
+  font-weight: $regular;
+  color: $color-1;
+}
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 600;
+
+$little-size: 1rem;
+$mini-size: 1.1rem;
+$small-size: 1.2rem;
+$smaller-size: 1.4rem;
+$medium-size: 1.6rem;
+$middle-size: 1.7rem;
+$larger-size: 1.8rem;
+$larger-1-size: 1.9rem;
+$large-size: 2rem;

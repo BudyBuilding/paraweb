@@ -1,0 +1,569 @@
+@import "fonts";
+@import "colors";
+@import "spacing";
+@import "helper-mixins";
+
+@media screen and (min-width: 108em) {
+  .container {
+    @include side-paddings(36rem);
+  }
+
+  .hidden {
+    display: none;
+  }
+  .learn-grid {
+    margin-right: -1rem;
+  }
+
+  .box-text,
+  .button-box {
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 108em) {
+  .container {
+    @include side-paddings(24rem);
+  }
+
+  .reviews {
+    height: 73rem;
+  }
+
+  .statistics {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 101em) {
+  html {
+    font-size: 55%;
+  }
+
+  .learn-about {
+    height: 72.6rem;
+  }
+
+  .learn-about .top-box {
+    margin-bottom: 5rem;
+  }
+
+  .boxes {
+    margin-top: 4rem;
+  }
+  .first-row,
+  .second-row {
+    margin-bottom: 8rem;
+  }
+
+  .reviews {
+    height: 80rem;
+    padding-top: 8rem;
+  }
+
+  .statistics {
+    height: 63rem;
+  }
+}
+
+@media screen and (max-width: 89em) {
+  .first-row {
+    margin-bottom: 8rem;
+  }
+
+  .second-row {
+    margin-bottom: 4rem;
+  }
+
+  .container {
+    @include side-paddings(16rem);
+  }
+}
+
+@media screen and (max-width: 80em) {
+  .container {
+    @include side-paddings(12rem);
+  }
+
+  .hero {
+    background-size: 150%;
+    background-position: bottom 0rem right -4rem;
+  }
+
+  .learn-about {
+    height: 80rem;
+  }
+
+  .learn-about .top-box {
+    margin-bottom: 4rem;
+  }
+
+  .first-row,
+  .second-row {
+    gap: 8rem;
+  }
+
+  .boxes {
+    margin-left: 5rem;
+  }
+
+  .reviews {
+    height: 72rem;
+    padding-top: 1px;
+  }
+
+  .statistics {
+    height: 62rem;
+  }
+
+  .top-box {
+    margin: 8rem 0;
+  }
+
+  .packages {
+    height: 73rem;
+    padding-top: 0.1rem;
+  }
+
+  .packages .top-box {
+    margin-bottom: 4rem;
+  }
+
+  .packages .line {
+    margin-bottom: 2rem;
+  }
+
+  .package-box {
+    height: 40rem;
+  }
+
+  .package-box:hover {
+    height: 44rem;
+  }
+
+  .contact-us {
+    height: 85rem;
+  }
+
+  .footer-main {
+    margin-top: 30rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .footer-left {
+    padding-top: 5rem;
+  }
+
+  .footer-right {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .top {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .icons,
+  .address {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 60%;
+    text-align: center;
+  }
+
+  .footer-link {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .copy {
+    margin: 0;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    height: 100vh;
+    background-size: 250%;
+    background-position: bottom 0rem right -50rem;
+  }
+
+  .learn-about {
+    height: 79rem;
+  }
+
+  .statistics {
+    height: 67rem;
+  }
+
+  .boxes {
+    margin-top: 0;
+  }
+
+  .second-row {
+    margin-bottom: 8rem;
+  }
+
+  .packages {
+    height: 75rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  html {
+    font-size: 35%;
+  }
+
+  .hero {
+    height: 100vh;
+    background-size: 200%;
+    background-position: bottom 0rem right -34rem;
+  }
+
+  .navigation-bar {
+    @include space-between;
+    padding: 3.5rem $nav-pad;
+    width: 100%;
+    height: 6rem;
+  }
+
+  .learn-about {
+    height: 68rem;
+    @include space-between;
+  }
+
+  .learn-grid {
+    height: 58rem;
+  }
+  //36 57
+  .phone-img {
+    width: 30rem;
+    height: 48rem;
+  }
+  .first-row,
+  .second-row {
+    gap: 5rem;
+    margin-bottom: 8rem;
+  }
+
+  .learn-about .bottom-button {
+    margin: 0;
+  }
+
+  .top-box {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .reviews {
+    height: 74rem;
+  }
+
+  .statistics {
+    margin-top: 1rem;
+    height: 57rem;
+  }
+
+  .stat-box {
+    margin: 0;
+  }
+
+  .packages {
+    height: 68rem;
+  }
+  .packages .top-box {
+    margin-bottom: 2rem;
+  }
+  .package-box {
+    height: 41rem;
+  }
+  .package-box:hover {
+    height: 45rem;
+  }
+
+  .package-boxes {
+    height: 45rem;
+  }
+
+  .contact-us {
+    height: 85rem;
+  }
+
+  /***************************/
+  .nav-open {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+  }
+  .menu-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .navigation-bar {
+    padding: 4rem;
+  }
+
+  .logo-img {
+    width: 60%;
+  }
+
+  .nav-open .navigation-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    transition: all 2s ease;
+    overflow: hidden;
+  }
+
+  .nav-open .navigation-bar {
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease;
+    opacity: 0;
+    position: fixed;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .menu-button {
+    display: block;
+  }
+
+  .icon-mobile-nav {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .nav-open .buttons {
+    margin: auto;
+    @include center;
+    flex-direction: column;
+    gap: 8rem;
+    transition: all 2s ease;
+  }
+
+  .nav-button {
+    font-size: 3rem;
+    color: $color-5;
+  }
+
+  .nav-button:last-child {
+    border: none;
+  }
+
+  .nav-button:last-child ion-icon {
+    display: none;
+  }
+
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
+  }
+
+  .icon-mobile-nav[name="menu-outline"],
+  .nav-open .logo {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"],
+  .nav-open .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 26em) {
+  .html {
+    overflow: none;
+  }
+
+  .line {
+    margin: 0;
+  }
+
+  .learn-grid,
+  .review-boxes,
+  .stats,
+  .package-boxes,
+  .footer-right,
+  .first-row,
+  .second-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-box {
+    margin: 5rem 0;
+  }
+
+  .hero {
+    height: 100vh;
+    background-size: 350%;
+    background-position: bottom 0rem right -80rem;
+    position: relative;
+  }
+
+  .hero-center {
+    font-size: 3rem;
+    line-height: 2;
+  }
+
+  .center-text {
+    padding: 3rem 2.7rem 3.5rem 2.7rem;
+  }
+
+  .hero-center-icon {
+    margin-top: 5rem;
+    font-size: 4rem;
+  }
+
+  .hero-bottom {
+    @include space-between;
+    position: absolute;
+    padding: 1rem 5rem 0.6rem 5rem;
+  }
+  .purchase-title {
+    font-size: $large-size + 0.2;
+  }
+
+  .purchase-text {
+    font-size: $larger-size;
+  }
+
+  .learn-about {
+    justify-content: center;
+    height: 149rem;
+    gap: 0rem;
+  }
+
+  .phone-img {
+    width: 36rem;
+    height: 57rem;
+    padding: 0;
+  }
+  .top-box {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .boxes {
+    margin-left: 0;
+  }
+
+  .right-side {
+    height: 77rem;
+  }
+
+  .learn-grid {
+    flex-direction: column-reverse;
+    height: 135rem;
+    margin: 0;
+  }
+
+  .button-box {
+    margin: 0;
+  }
+
+  .box-text {
+    padding: 0;
+  }
+
+  .first-row,
+  .second-row {
+    width: 70%;
+    @include center;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .reviews {
+    height: 128rem;
+    background-size: 200%;
+    background-position: top 0 left -15rem;
+  }
+
+  .review {
+    width: 80%;
+    font-size: $large-size;
+  }
+
+  .review-chooser {
+    margin-top: 5rem;
+  }
+
+  .statistics {
+    height: 125rem;
+  }
+
+  .stats {
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+
+  .stat-box {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 37rem;
+  }
+
+  .packages {
+    height: 159rem;
+  }
+
+  .package-boxes {
+    margin-top: 5rem;
+  }
+
+  .package-box {
+    width: 70%;
+  }
+
+  .contact-us {
+    height: 87rem;
+    @include space-between;
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+
+  .contact-us .logo-part {
+    @include center;
+  }
+
+  .footer-main {
+    @include center;
+    margin: 0;
+  }
+
+  .footer-right-title {
+    @include center;
+  }
+}
